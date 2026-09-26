@@ -4,11 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Student student1 = new Student();
         student1.setName("Alex");
-        student1.setGrade(90);
+        student1.setGrade(85);
 
-        System.out.println("Name: " + student1.getName());
-        System.out.println("Grade: " + student1.getGrade());
+        System.out.println(student1.getName());
+        System.out.println(student1.getGrade());
 
+        student1.setGrade(150);  // invalid - should print "Invalid grade" and NOT change the grade
+        System.out.println(student1.getGrade());  // should still show 85, not 150
     }
-    
 }
