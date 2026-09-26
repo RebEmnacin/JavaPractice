@@ -4,6 +4,15 @@ public class Student
 {
     private String name;
     private int grade;
+    private boolean passed;
+
+    public boolean isPassed() {
+        return passed;
+    }
+
+    public void setPassed(boolean passed) {
+        this.passed = passed;
+    }
 
     public int getGrade() {
         return grade;
