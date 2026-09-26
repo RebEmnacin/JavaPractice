@@ -9,7 +9,7 @@ public class Main {
         System.out.println(student1.getName());
         System.out.println(student1.getGrade());
 
-        student1.setGrade(150);  // invalid - should print "Invalid grade" and NOT change the grade
-        System.out.println(student1.getGrade());  // should still show 85, not 150
+        student1.calculatePassStatus();
+        System.out.println(student1.isPassed());
     }
 }

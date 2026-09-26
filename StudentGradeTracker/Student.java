@@ -14,6 +14,14 @@ public class Student
         this.passed = passed;
     }
 
+    public void calculatePassStatus() {
+        if (grade >= 75) {
+            passed = true;
+        } else {
+            passed = false;
+        }
+    }
+
     public int getGrade() {
         return grade;
     }
