@@ -17,8 +17,10 @@ public class Student
     public void calculatePassStatus() {
         if (grade >= 75) {
             passed = true;
+            System.out.println("Student has passed");
         } else {
             passed = false;
+            System.out.println("Student has not passed");
         }
     }
 

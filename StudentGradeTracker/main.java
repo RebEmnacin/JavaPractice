@@ -8,8 +8,6 @@ public class Main {
 
         System.out.println(student1.getName());
         System.out.println(student1.getGrade());
-
         student1.calculatePassStatus();
-        System.out.println(student1.isPassed());
     }
 }
