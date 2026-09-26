@@ -6,6 +6,12 @@ public class Student
     private int grade;
     private boolean passed;
 
+    public Student(String name, int grade) {
+    this.name = name;
+    setGrade(grade); 
+    calculatePassStatus();
+}
+
     public boolean isPassed() {
         return passed;
     }
