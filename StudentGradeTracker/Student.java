@@ -10,7 +10,11 @@ public class Student
     }
 
     public void setGrade(int grade) {
-        this.grade = grade;
+        if (grade < 0 || grade > 100) {
+            System.out.println("Invalid grade");
+        } else {
+            this.grade = grade;
+        }
     }
 
     public String getName() 
